@@ -1,0 +1,155 @@
+:root {
+/* colors */
+/*Primary*/
+
+
+--Red : hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+/*Neutral*/
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: var(--Very-Light-Gray);
+}
+
+.top-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    min-width: 100%;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.top-row h1{
+    color: var(--Grayish-Blue);
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+#bold-header {
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+}
+
+.top-row p {
+    padding: 0 30%;
+    color: var(--Grayish-Blue);
+}
+
+.card-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left-column {
+    margin-left: 1rem;
+}
+
+.right-column {
+    margin-right: 1rem;
+}
+
+section {
+    margin: 1rem 0;
+}
+
+.card {
+    padding: 1rem 2rem 1rem 1rem;
+    border-radius: 0.2rem;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 9px 10px 22px 6px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    color: var(--Very-Dark-Blue);
+}
+
+.card p {
+    color: var(--Grayish-Blue);
+}
+
+.card .svg-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+
+.supervisor {
+    border-top: 3px solid var(--Cyan);
+}
+
+.team-builder {
+    border-top: 3px solid var(--Red);
+}
+
+.karma {
+    border-top: 3px solid var(--Orange);
+}
+
+.calculator {
+    border-top: 3px solid var(--Blue);
+}
+
+.middle-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-row p {
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    .left-column {
+        margin: 0 1rem;
+    }
+
+    .right-column {
+        margin: 0 1rem;
+    }
+
+    .middle-column {
+        margin: 0 1rem;
+    }
+}
+
+
